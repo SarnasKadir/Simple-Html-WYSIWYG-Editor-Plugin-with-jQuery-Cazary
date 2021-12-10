@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Cazary demo</title>
+<link rel="stylesheet" type="text/css" href="dist/themes/flat/style.css" />
+<style type="text/css">
+textarea{
+width: 640px;
+height: 400px;
+}
+</style>
+</head>
+<body>
+<textarea id="id_cazary_full" placeholder="full mode"></textarea>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="dist/cazary.min.js"></script>
+<script type="text/javascript">
+(function($, window){
+$(function($){ 
+$("textarea#id_cazary_full").cazary({
+commands: "FULL"
+});
+});
+})(jQuery, window);
+</script>
+</body>
+</html>
